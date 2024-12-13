@@ -4,14 +4,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/darkpink">
+
+    <ImageView android:id="@+id/planeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/plane2"
+        android:contentDescription="Plane moving"/>
 
     <TextView
         android:id="@+id/splashText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to FunAsia!"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         android:gravity="center"
         android:fontFamily="@font/poppinsxbold"/>
