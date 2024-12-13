@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Sample country list
         val countryList = listOf(
             Country(R.drawable.south_korea, "South Korea", "Seoul", R.drawable.plane),
             Country(R.drawable.japan, "Japan", "Tokyo", R.drawable.plane),
