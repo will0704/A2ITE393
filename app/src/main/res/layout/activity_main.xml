@@ -3,9 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    android:paddingTop="0dp"
-    android:clipToPadding="true">
+    android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/titleBar"
@@ -13,15 +11,16 @@
         android:layout_height="wrap_content"
         android:background="@color/darkpink"
         android:fontFamily="@font/poppinsxbold"
-        android:gravity="start"
-        android:padding="10dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="10dp"
+        android:padding="5dp"
         android:text="FunAsia"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"/>
+        android:textSize="30sp"/>
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -33,12 +32,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <ImageSwitcher
-                android:id="@+id/imageSwitcher"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"

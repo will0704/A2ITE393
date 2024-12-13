@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         R.drawable.visitturkey,
         R.drawable.visitphilippines,
         R.drawable.visitqatar,
-
         )
 
     private var currentIndex = 0
