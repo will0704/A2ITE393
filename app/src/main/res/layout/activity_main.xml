@@ -4,15 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/titleBar"
+    <TextView android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/darkpink"
         android:fontFamily="@font/poppinsxbold"
         android:gravity="start"
         android:padding="5dp"
-        android:paddingEnd="20dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="FunAsia"
         android:textColor="@android:color/white"
         android:textSize="30sp"/>
@@ -28,12 +29,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/myImageView"
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:contentDescription="Visit Japan"
-                android:src="@drawable/visitjapan"
                 android:scaleType="centerCrop" />
 
             <androidx.recyclerview.widget.RecyclerView
